@@ -1,5 +1,38 @@
- <div class="flex justify-between px-2 md:px-5">
-    <div class="flex flex-col text-xl font-[10px]">
+<div class="fixed right-0 top-0 left-0 flex justify-between px-2 md:px-5 mt-3 bg-white z-50">
+  <div class="flex flex-col text-xl font-[10px]">
+    <p>DE</p>
+    <p>EN</p>
+  </div>
+
+  <div>
+    <p class="text-4xl font-semibold mt-1 py-3">Baumeister</p>
+  </div>
+
+  <div class="md:hidden flex items-center">
+    <img id="menuIcon" src="/header.png" alt="menu" class="w-8 h-6 cursor-pointer" />
+    <img id="closeIcon" src="/cross.png" alt="close" class="w-8 h-8 cursor-pointer hidden" />
+
+    <ul id="mobileMenu" class="absolute md:hidden mt-4 right-0 hidden flex-col items-center space-y-2 text-3xl text-[#00672E]"
+        style="left: 50%; transform: translateX(calc(-50vw + 50%)); top: 100%;">
+      <li class="font-semibold">About</li>
+      <li class="font-semibold">Services</li>
+      <li class="font-semibold">References</li>
+      <li class="font-semibold">Contact</li>
+    </ul>
+  </div>
+
+  <ul class="hidden md:flex md:flex-col text-xl -space-y-2 font-[15px]">
+    <li class="text-right">About</li>
+    <li class="text-right">Services</li>
+    <li class="text-right">References</li>
+    <li class="text-right">Contact</li>
+  </ul>
+</div>
+
+
+
+ <!-- <div class="fixed right-0 top-0 left-0 flex justify-between px-2 md:px-5 mt-3">
+    <div class="flex flex-col text-xl  font-[10px]">
       <p>DE</p>
       <p>EN</p>
     </div>
@@ -19,21 +52,64 @@
           class="hidden w-8 h-8 peer-checked:block"
         />
         <ul
-          class="absolute md:hidden mt-4 right-0 hidden peer-checked:flex flex-col items-center space-y-2 text-lg text-[#00672E]"
+          class="absolute md:hidden mt-4 right-0 hidden peer-checked:flex flex-col items-center space-y-2 text-3xl text-[#00672E]"
           style="left: 50%; transform: translateX(calc(-50vw + 50%));"
         >
-          <li>About</li>
-          <li>Services</li>
-          <li>References</li>
-          <li>Contact</li>
+          <li class="font-semibold">About</li>
+          <li class="font-semibold">Services</li>
+          <li class="font-semibold">References</li>
+          <li class="font-semibold">Contact</li>
         </ul>
       </label>
     </div>
 
-    <ul class="hidden md:flex md:flex-col text-xl -space-y-2 font-[15px]">
+    <ul class="hidden md:flex md:flex-col text-xl  -space-y-2 font-[15px]">
       <li class="text-right">About</li>
       <li class="text-right">Services</li>
       <li class="text-right">References</li>
       <li class="text-right">Contact</li>
     </ul>
-  </div>
+  </div> -->
+
+
+   <!-- <div class="fixed right-0 top-0 left-0 flex justify-between px-2 md:px-5 mt-3">
+    <div class="flex flex-col text-xl  font-[10px]">
+      <p>DE</p>
+      <p>EN</p>
+    </div>
+
+    <div>
+      <p class="text-4xl font-semibold mt-1 py-3">Baumeister</p>
+    </div>
+
+    <div class="md:hidden flex items-center">
+      <label class="relative cursor-pointer">
+        <input type="checkbox" class="peer hidden" />
+        <img src="/header.png" alt="menu" class="w-8 h-6 peer-checked:hidden" />
+
+        <img
+          src="/cross.png"
+          alt="close"
+          class="hidden w-8 h-8 peer-checked:block"
+        />
+        <ul
+          class="absolute md:hidden mt-4 right-0 hidden peer-checked:flex flex-col items-center space-y-2 text-3xl text-[#00672E]"
+          style="left: 50%; transform: translateX(calc(-50vw + 50%));"
+        >
+          <li class="font-semibold">About</li>
+          <li class="font-semibold">Services</li>
+          <li class="font-semibold">References</li>
+          <li class="font-semibold">Contact</li>
+        </ul>
+      </label>
+    </div>
+
+    <ul class="hidden md:flex md:flex-col text-xl  -space-y-2 font-[15px]">
+      <li class="text-right">About</li>
+      <li class="text-right">Services</li>
+      <li class="text-right">References</li>
+      <li class="text-right">Contact</li>
+    </ul>
+  </div> -->
+
+   
