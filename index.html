@@ -12,14 +12,12 @@
         .then((response) => response.text())
         .then((html) => {
             document.getElementById(id).innerHTML = html;
-            // Initialize menu after header is loaded
             if (id === 'header') {
                 initializeMenu();
             }
         });
     }
 
-    // Menu initialization function
     const initializeMenu = () => {
         const menuIcon = document.getElementById("menuIcon");
         const closeIcon = document.getElementById("closeIcon");
