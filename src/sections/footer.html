@@ -1,15 +1,12 @@
-<script>
-  console.log("hello world===================================>>>>>>>");
-</script>
-
-<div class="h-[90vh] w-screen bg-green-500 overflow-hidden">
-  <div class="h-4/5 flex justify-center items-center max-md:h-2/3">
-    <img src="public/Vector7.png" class="h-2/3 max-md:h-2/5" />
+<div class="h-[90vh] w-screen  overflow-hidden">
+  <div class="h-4/6 flex justify-center items-center lg:items-end max-md:h-2/3">
+    <img src="public/Vector7.png" class="h-2/3 max-md:h-2/5 lg:h-3/4" />
   </div>
-  <div class="h-1/5">
-    <ul class="flex justify-evenly h-full text-2xl max-md:hidden">
+  <div class="h-2/6 px-[8vw] md:text-lg lg:text-xl lg:flex lg:items-center">
+    <!-- desktop -->
+    <ul class="hidden lg:flex w-full justify-between">
       <li>
-        Agentur Baumeister
+        Agentur Baumeister 
         <br />Bockstrafe 13 <br />10967 Berlin
       </li>
       <li>
@@ -18,24 +15,46 @@
       </li>
       <li>Linkedin</li>
       <li>Instagram</li>
-      <li>Impressum <br />Datenshcutz</li>
-    </ul>
-    <!-- Mobile -->
-    <ul class="md:hidden flex max-md:flex-col max-md:px-[5vw] gap-8 pl-[5vw]">
       <li>
-        Agentur Baumeister
+        Impressum <br />
+        Datenshcutz
+      </li>
+    </ul>
+    <!-- tablet -->
+    <ul class="flex justify-between h-1/2 max-md:hidden lg:hidden">
+      <li>
+        Agentur Baumeister 
         <br />Bockstrafe 13 <br />10967 Berlin
       </li>
       <li>
-        hallo@Agentur-baumeister.com <br />
+        hallo@Agentur-baumeister.com<br />
         +49(0)30 - 490 827 87
       </li>
     </ul>
-    <ul class="md:hidden flex justify-evenly mt-10">
+    <ul class="flex gap-3 w-full justify-between max-md:hidden lg:hidden">
+      <li>Linkedin</li>
+      <li>Instagram</li>
       <li>Impressum</li>
       <li>Datenshcutz</li>
-      <li>Linkedin</li>
-      <li>Instagram</li>
     </ul>
+    <!-- Mobile -->
+    <div class="md:hidden px-[5vw]">
+      <ul class="flex flex-col gap-8">
+        <li>
+          Agentur Baumeister 
+          <br />Bockstrafe 13 <br />10967 Berlin
+        </li>
+        <li>
+          hallo@Agentur-baumeister.com <br />
+          +49(0)30 - 490 827 87
+        </li>
+      </ul>
+      <ul class="flex justify-between mt-10">
+        <li>Datenshcutz</li>
+        <li>Impressum</li>
+        <li>Linkedin</li>
+        <li>Instagram</li>
+      </ul>
+    </div>
   </div>
 </div>
