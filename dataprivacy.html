@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baumeister Data Privacy</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script>
+        let loadComponents=(id,url)=>{
+            fetch(url)
+            .then((response)=>response.text())
+            .then((html)=>{
+                document.getElementById(id).innerHTML=html;
+            });
+        }
+
+        window.onload=()=> {
+            loadComponents('header', 'src/sections/header.html');
+            loadComponents('privacy','src/sections/data-privacy.html');
+            loadComponents('footer', 'src/sections/footer.html');
+        }
+    </script>
+</head>
+<body class="bg-bg-900">
+    <div id="header" class="text-bl-900"></div>
+    <div id="privacy"></div>
+    <div id="footer" class="text-bl-900"></div>
+</body>
+</html>
