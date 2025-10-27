@@ -16,19 +16,19 @@
 
 @layer utilities{
     .main-description {
-        @apply md:text-[32px] ml-[34px] mr-[33px] md:ml-[110px] md:mr-[111px] lg:ml-[200px] lg:mr-[198px] lg:text-[48px] lg:pb-[85px]
+        @apply md:text-[32px] ml-[34px] mr-[33px] md:ml-[110px] md:mr-[111px]
     }
     .main-content-yellow-hexagone {
-        @apply w-[146px] h-[87px] md:w-[196px] md:h-[99px] lg:w-[208px] lg:h-[134px]
+        @apply w-[146px] h-[87px] md:w-[196px] md:h-[99px]
     }
     .main-content-grid {
-        @apply ml-[34px] mr-[1px] mt-[95px] md:mt-[129px] lg:mt-[135px] md:ml-[110px] md:mr-[84px]  lg:ml-[168px] lg:mr-[194.44px] gap-[86px] md:gap-[73px] lg:gap-x-30
+        @apply ml-[34px] mr-[1px] mt-[95px] md:mt-[129px] lg:mt-[135px] md:ml-[110px] md:mr-[84px]  gap-[86px] md:gap-[73px]
     }
     .main-content-green-hexagone-container{
-        @apply lg:my-[44.45px] max-w-[334.86pxpx] md:max-w-[425.56px] lg:max-w-[468.56px] h-[547.97px] md:h-[699.49px] lg:h-[850px] xl:h-[680px] mr-[24.14px] pt-[107px] md:pt-[166px] lg:pt-[162.55px]
+        @apply lg:my-[44.45px] max-w-[334.86pxpx] md:max-w-[425.56px] h-[547.97px] md:h-[699.49px] mr-[24.14px] pt-[107px] md:pt-[166px]
     }
     .main-content-green-paragraph{
-        @apply ml-[33px] mr-[44.86px]  md:ml-[71.56px] md:mr-[43px] lg:ml-[88px] lg:mr-[53.56px] md:text-[21px] lg:text-[21px] leading-[22px] md:leading-[25px]
+        @apply ml-[33px] mr-[44.86px]  md:ml-[71.56px] md:mr-[43px] md:text-[21px] leading-[22px] md:leading-[25px]
     }
     
 }
