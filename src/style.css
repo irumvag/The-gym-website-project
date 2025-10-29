@@ -1,6 +1,41 @@
 @import "tailwindcss";
 @import '@fontsource-variable/outfit';
 
+
+@theme {
+     /*  custom spacing  */
+  --spacing-19: 19px;
+  --spacing-58: 58px;
+  --spacing-60: 60px;
+  --spacing-65: 65px;
+  --spacing-73: 73px;
+  --spacing-180: 180px; 
+  --spacing-363: 363px;
+  --spacing-685: 685px;
+  --spacing-605: 605px;
+  --spacing-918: 918px;
+  --spacing-270: 270px;
+  --spacing-20: 20px;
+  --spacing-440: 440px;
+  --spacing-288: 288px;
+  --spacing-385: 385px;
+  --spacing-340: 340px;
+  --spacing-390: 390px;
+  --leading-25: 25px;
+  --leading-27: 27px;
+  --leading-1_05: 1.05;
+
+
+  /*  custom font sizes */
+  --text-26: 26px;
+  --text-20: 20px;
+  --text-24: 24px;
+  --text-48: 48px;
+  --text-32: 32px;
+
+  /*  color  */
+  --color-greenb: #00672E;
+}
 @layer base{
     body {
     font-family: 'Outfit Variable', sans-serif;
