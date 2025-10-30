@@ -8,27 +8,31 @@
 }
 
 @theme{
-    --spacing-122 : 122px;
+    --spacing-85 : 85px;
     --spacing-8xl: 100rem;
-    --spacing-69: 69px;
+    --spacing-425: 425px;
+    --spacing-834: 834px;
+    --breakpoint-1xl: 92rem;
+    --spacing-90: 90%;
+    --spacing-69: 13.40%;
     --spacing-563: 563px;
 }
 
 @layer utilities{
     .main-description {
-        @apply md:text-[32px] ml-[34px] mr-[33px] md:ml-[110px] md:mr-[111px] lg:text-4xl lg:mt-[330.58px] lg:ml-[13.2%] lg:mr-[13.1%] lg:tracking-wider lg:leading-[50px] font-normal
+        @apply md:text-[32px] ml-[8.65%] mr-[8.4%] mb-[86px] sm:mt-[73.09px] sm:mb-[122px] md:ml-[13.2%] mt-[97.52px] md:mr-[13.31%] lg:text-4xl lg:mt-[330.58px] lg:ml-[13.2%] lg:mr-[13.1%] lg:tracking-wider lg:leading-[50px] font-normal 1xl:text-5xl 1xl:leading-[60px] 1xl:tracking-wide
     }
     .main-content-yellow-hexagone {
-        @apply w-[146px] h-[87px] md:w-[196px] md:h-[99px] lg:w-[180px] lg:h-[120px]
+        @apply w-[146px] h-[87px]  md:w-[196px] md:h-[99px] lg:w-[180px] lg:h-[120px]
     }
     .main-content-grid {
-        @apply ml-[34px] pb-[300px] mr-[1px] mt-[95px] md:mt-[129px] lg:mt-[135px] md:ml-[110px] md:mr-[84px]  gap-[86px] md:gap-[73px] lg:ml-[11.1%] lg:mr-[12.85%] lg:gap-[7.9%]
+        @apply ml-[8.67%] mr-[6.14%] pb-[300px] sm:pb-[177.51px] mt-[95px] sm:ml-[13.31%] sm:mr-[10.07%] md:mt-[129px] lg:mt-[135px]  gap-[86px] md:gap-[73px] lg:ml-[11.1%] lg:mr-[12.85%] lg:gap-[7.9%]
     }
     .main-content-green-hexagone-container{
-        @apply lg:mb-[44.45px] lg:w-[85%] pb-[35%]
+        @apply w-fit sm:ml-[33.40%] lg:mt-0 lg:mb-[44.45px] lg:mx-0 lg:w-[85%] pb-[35%]
     }
     .main-content-green-paragraph{
-        @apply ml-[33px] mr-[44.86px]  md:ml-[71.56px] md:mr-[43px] md:text-[21px] leading-[22px] md:leading-[25px] lg:mt-[35.50%] lg:ml-[17.89%] lg:mr-[7.8%] lg:text-lg 2xl:text-[21px] lg:leading-[22px] font-light
+        @apply mt-[107px] ml-[9.5%] mr-[13.4%]  sm:ml-[16.06%] sm:mr-[9.65%] sm:mt-[166px] sm:text-[21px] leading-[22px] md:leading-[25px] lg:mt-[35.50%] lg:ml-[14%] lg:mr-[9%] lg:text-lg 1xl:leading-[25px] 2xl:text-[21px] lg:leading-[22px] font-light
     }
     
 }
