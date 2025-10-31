@@ -3,9 +3,6 @@
 ## ℹDescription
 Please provide a brief description of the changes introduced in this pull request. Include the purpose and context of these changes.
 
-## 🥨Related Issue(s)
-Link to the issue(s) this PR addresses, if applicable (e.g., `#123`).
-
 ## 💹Changes Made
 - List the specific changes or features added.
 - Include any relevant technical details (e.g., new dependencies, updated configurations).
