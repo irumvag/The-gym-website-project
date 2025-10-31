@@ -1,22 +1,64 @@
 @import "tailwindcss";
 @import '@fontsource-variable/outfit';
 
+
+@theme {
+     /*  custom spacing  */
+  --spacing-19: 19px;
+  --spacing-small: 16px;
+  --spacing-58: 58px;
+  --spacing-60: 60px;
+  --spacing-65: 65px;
+  --spacing-73: 73px;
+  --spacing-Large: 180px; 
+  --spacing-363: 363px;
+  --spacing-685: 685px;
+  --spacing-605: 605px;
+  --spacing-918: 918px;
+  --spacing-270: 270px;
+  --spacing-20: 20px;
+  --spacing-23: 23px;
+  --spacing-5000: 5000px;
+  --spacing-440: 440px;
+  --spacing-288: 288px;
+  --spacing-385: 385px;
+  --spacing-340: 340px;
+  --spacing-390: 390px;
+  --leading-25: 25px;
+  --leading-27: 27px;
+  --leading-1_05: 1.05;
+  --spacing-85 : 85px;
+  --spacing-8xl: 100rem;
+  --spacing-425: 425px;
+  --spacing-834: 834px;
+  --breakpoint-1xl: 92rem;
+  --spacing-90: 90%;
+  --spacing-69: 13.40%;
+  --spacing-563: 563px;
+
+
+  /*  custom font sizes */
+  --text-26: 26px;
+  --text-20: 20px;
+  --text-24: 24px;
+  --text-48: 48px;
+  --text-32: 32px;
+  --breakpoint-ma:90rem;
+  --breakpoint-g:91rem;
+  
+
+  /*  color  */
+  --color-greenb: #00672E;
+  --color-bl-900: #00672E;
+  --color-bg-900: #EFECEA;
+}
+
 @layer base{
     body {
     font-family: 'Outfit Variable', sans-serif;
     }
 }
 
-@theme{
-    --spacing-85 : 85px;
-    --spacing-8xl: 100rem;
-    --spacing-425: 425px;
-    --spacing-834: 834px;
-    --breakpoint-1xl: 92rem;
-    --spacing-90: 90%;
-    --spacing-69: 13.40%;
-    --spacing-563: 563px;
-}
 
 @layer utilities{
     .main-description {
@@ -34,5 +76,10 @@
     .main-content-green-paragraph{
         @apply mt-[107px] ml-[9.5%] mr-[13.4%]  sm:ml-[16.06%] sm:mr-[9.65%] sm:mt-[166px] sm:text-[21px] leading-[22px] md:leading-[25px] lg:mt-[35.50%] lg:ml-[14%] lg:mr-[9%] lg:text-lg 1xl:leading-[25px] 2xl:text-[21px] lg:leading-[22px] font-light
     }
-    
+    .main-header{
+        @apply mx-[19px] md:ml-[58px] md:mr-[60px] lg:mx-[205px] pt-[93px]  md:pt-[155px] lg:pt-[206px] text-[#00672E];
+    }
+    .mark-sm{
+        @apply marker:text-sm;
+    }
 }
