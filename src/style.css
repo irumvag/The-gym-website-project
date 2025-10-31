@@ -5,17 +5,20 @@
 @theme {
      /*  custom spacing  */
   --spacing-19: 19px;
+  --spacing-small: 16px;
   --spacing-58: 58px;
   --spacing-60: 60px;
   --spacing-65: 65px;
   --spacing-73: 73px;
-  --spacing-180: 180px; 
+  --spacing-Large: 180px; 
   --spacing-363: 363px;
   --spacing-685: 685px;
   --spacing-605: 605px;
   --spacing-918: 918px;
   --spacing-270: 270px;
   --spacing-20: 20px;
+  --spacing-23: 23px;
+  --spacing-5000: 5000px;
   --spacing-440: 440px;
   --spacing-288: 288px;
   --spacing-385: 385px;
@@ -32,6 +35,9 @@
   --text-24: 24px;
   --text-48: 48px;
   --text-32: 32px;
+  --breakpoint-ma:90rem;
+  --breakpoint-g:91rem;
+  
 
   /*  color  */
   --color-greenb: #00672E;
