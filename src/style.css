@@ -47,3 +47,17 @@
     font-family: 'Outfit Variable', sans-serif;
     }
 }
+
+@layer utilities{
+    .main-header{
+        @apply mx-[19px] md:ml-[58px] md:mr-[60px] lg:mx-[205px] pt-[93px]  md:pt-[155px] lg:pt-[206px] text-[#00672E];
+    }
+    .mark-sm{
+        @apply marker:!text-sm;
+    }
+}
+
+@theme{
+    --color-bl-900: #00672E !important;
+    --color-bg-900: #EFECEA !important;
+}
