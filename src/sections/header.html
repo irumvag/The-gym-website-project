@@ -1,32 +1,32 @@
-<div
-  class="fixed right-0 top-0 left-0 flex justify-between px-5 md:px-5 mt-7 md:mt-3 bg-white z-50"
+<header
+  class="fixed inset-x-0 top-0 flex justify-between px-5 md:px-5 mt-6 md:mt-3 bg-white z-50"
 >
-  <div class="flex flex-col w-8 h-8 font-[10px]">
-    <p class="font-400 text-[15px] md:text-[24px]">DE</p>
-    <p class="text-[15px] md:text-[24px]">EN</p>
+  <div class="flex flex-col w-8 h-8 text-[10px]">
+    <p class="font-normal text-[15px] md:text-2xl">DE</p>
+    <p class="text-[15px] md:text-2xl">EN</p>
   </div>
 
   <div class="flex justify-center">
-    <p class="text-[32px] md:text-[48px] font-semibold">Baumeister</p>
+    <p class="text-3xl md:text-5xl font-semibold">Baumeister</p>
   </div>
 
-  <div class="xl:hidden flex items-center">
+  <nav class="xl:hidden flex items-center">
     <img
       id="menuIcon"
       src="/header.png"
       alt="menu"
-      class="w-[39px] h-[23px] md:w-[64px] md:h-[37px] cursor-pointer"
+      class="w-10 h-6 md:w-16 md:h-9 cursor-pointer"
     />
     <img
       id="closeIcon"
       src="/cross.png"
       alt="close"
-      class="w-[39px] h-[30px]  md:w-[64px] md:h-[44px] mb-2 cursor-pointer hidden"
+      class="w-10 h-7 md:w-16 md:h-11 mb-2 cursor-pointer hidden"
     />
 
     <ul
       id="mobileMenu"
-      class="absolute xl:hidden mt-[71px] right-0 hidden flex-col items-center space-y-[61px] text-3xl text-[#00672E]"
+      class="absolute xl:hidden mt-16 right-0 hidden flex-col items-center space-y-16 text-3xl md:text-5xl text-[#00672E]"
       style="left: 50%; transform: translateX(calc(-50vw + 50%)); top: 100%"
     >
       <li class="font-semibold">About</li>
@@ -34,12 +34,12 @@
       <li class="font-semibold">References</li>
       <li class="font-semibold">Contact</li>
     </ul>
-  </div>
+  </nav>
 
-  <ul class="hidden xl:flex xl:flex-col -space-y-2 font-[15px]">
-    <a href=""><li class="text-right text-[24px]">About</li></a>
-    <a href=""><li class="text-right text-[24px]">Services</li></a>
-    <a href=""><li class="text-right text-[24px]">References</li></a>
-    <a href=""><li class="text-right text-[24px]">Contact</li></a>
+  <ul class="hidden xl:flex xl:flex-col -space-y-2 text-[15px]">
+    <a href=""><li class="text-right text-2xl">About</li></a>
+    <a href=""><li class="text-right text-2xl">Services</li></a>
+    <a href=""><li class="text-right text-2xl">References</li></a>
+    <a href=""><li class="text-right text-2xl">Contact</li></a>
   </ul>
-</div>
+</header>
