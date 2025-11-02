@@ -51,6 +51,11 @@
   --color-greenb: #00672E;
   --color-bl-900: #00672E;
   --color-bg-900: #EFECEA;
+
+
+  /* font */
+  
+  --font-weight-primary: 400;
 }
 
 @layer base{
