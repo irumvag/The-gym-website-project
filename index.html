@@ -12,7 +12,32 @@
         .then((response) => response.text())
         .then((html) => {
             document.getElementById(id).innerHTML = html;
+            if (id === 'header') {
+                initializeMenu();
+            }
         });
+    }
+
+    const initializeMenu = () => {
+        const menuIcon = document.getElementById("menuIcon");
+        const closeIcon = document.getElementById("closeIcon");
+        const mobileMenu = document.getElementById("mobileMenu");
+
+        if (menuIcon && closeIcon && mobileMenu) {
+            menuIcon.addEventListener("click", () => {
+                mobileMenu.classList.remove("hidden");
+                mobileMenu.classList.add("flex");
+                closeIcon.classList.remove("hidden");
+                menuIcon.classList.add("hidden");
+            });
+
+            closeIcon.addEventListener("click", () => {
+                mobileMenu.classList.add("hidden");
+                mobileMenu.classList.remove("flex");
+                closeIcon.classList.add("hidden");
+                menuIcon.classList.remove("hidden");
+            });
+        }
     }
 
     window.onload = () => {
@@ -23,7 +48,9 @@
         loadComponents('contact', 'src/sections/contact.html');
         loadComponents('footer', 'src/sections/footer.html');
     }
+    
 </script>
+
 <body>
     <div id="header"></div>
     <div id="hero"></div>
@@ -33,3 +60,6 @@
     <div id="footer"></div>
 </body>
 </html>
+
+
+
