@@ -55,6 +55,7 @@
   --color-greenb: #00672E;
   --color-bl-900: #00672E;
   --color-bg-900: #EFECEA;
+  
 
 
   /* font */
@@ -94,4 +95,35 @@
     .mark-sm{
         @apply marker:text-sm;
     }
+    .hero-text{
+        @apply text-white leading-7 lg:leading-13 text-center font-medium z-40 text-[24px] lg:text-[48px];
+    }
+    .hero-container{
+        @apply relative lg:pt-48 md:pt-40 pt-96 w-full bg-[#EFECEA] overflow-clip;
+    }
+    .hero-text-container{
+        @apply w-full lg:mt-[19.88%] mt-[34%] flex md:hidden lg:flex absolute justify-center items-center;
+    }
+    .pink{
+        @apply w-[24.75%] lg:w-[15.6%] ml-[64.54%] lg:ml-[39.6%] sticky z-0 top-0;
+    }
+    .yellow{
+        @apply w-[76.13%] lg:w-[48.01%] -mt-[43%] lg:-mt-[26.0%] sticky z-0 top-0;
+    }
+    .blue{
+        @apply w-[67.84%] lg:w-[46.56%] ml-[28.97%] lg:ml-[41.07%] -mt-[70%] lg:-mt-[53.0%] sticky z-10 lg:z-20 top-0;
+    }
+    .green1{
+        @apply w-[54.95%] lg:w-[34.66%] ml-[2.79%] lg:ml-[20.57%] -mt-[69%] lg:-mt-[39%] sticky z-30 lg:z-10 top-0;
+    }
+    .red{
+        @apply w-[75.66%] lg:w-[47.7%] ml-[21.07%] lg:ml-[13.1%] -mt-[19%] lg:-mt-[11.29%] sticky z-10 lg:z-0 top-0;
+    }
+    .green2{
+        @apply w-[42.57%] lg:w-[26.85%] ml-[57.68%] lg:ml-[73.21%] -mt-[72%] lg:-mt-[45%] sticky z-0 lg:z-0 top-0;
+    }
+    .header-end{
+        @apply absolute bg-[#EFECEA] w-full lg:-mt-[5%] z-40 lg:pb-[5%];
+    }
 }
+
