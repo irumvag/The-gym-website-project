@@ -38,6 +38,8 @@
 
 
   /*  custom font sizes */
+  --text-15: 15px;
+  --text-16: 16px;
   --text-26: 26px;
   --text-10 :15px;
   --text-12: 10px;
@@ -51,6 +53,14 @@
 
   /*  color  */
   --color-greenb: #00672E;
+  --color-bl-900: #00672E;
+  --color-bg-900: #EFECEA;
+
+
+  /* font */
+  
+  --font-weight-primary: 400;
+  --font-weight-primary: 500;
   --color-bl-900: #00672E;
   --color-bg-900: #EFECEA;
 }
