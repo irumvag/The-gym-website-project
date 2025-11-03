@@ -84,10 +84,10 @@
         @apply marker:text-sm;
     }
     .hero-text{
-        @apply text-white leading-7 lg:leading-13 lg:w-[32.34%] text-center font-medium z-40 text-[24px] lg:text-[48px];
+        @apply text-white leading-7 lg:leading-13 text-center font-medium z-40 text-[24px] lg:text-[48px];
     }
     .hero-container{
-        @apply relative lg:pt-48 md:pt-40 pt-96 w-full bg-[#EFECEA];
+        @apply relative lg:pt-48 md:pt-40 pt-96 w-full bg-[#EFECEA] overflow-clip;
     }
     .hero-text-container{
         @apply w-full lg:mt-[19.88%] mt-[34%] flex md:hidden lg:flex absolute justify-center items-center;
@@ -109,6 +109,9 @@
     }
     .green2{
         @apply w-[42.57%] lg:w-[26.85%] ml-[57.68%] lg:ml-[73.21%] -mt-[72%] lg:-mt-[45%] sticky z-0 lg:z-0 top-0;
+    }
+    .header-end{
+        @apply absolute bg-white w-full lg:-mt-[5%] z-40 lg:pb-[5%];
     }
 }
 
