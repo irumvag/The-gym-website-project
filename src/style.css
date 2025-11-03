@@ -38,6 +38,8 @@
 
 
   /*  custom font sizes */
+  --text-15: 15px;
+  --text-16: 16px;
   --text-26: 26px;
   --text-20: 20px;
   --text-24: 24px;
@@ -52,6 +54,14 @@
   --color-bl-900: #00672E;
   --color-bg-900: #EFECEA;
   
+
+
+  /* font */
+  
+  --font-weight-primary: 400;
+  --font-weight-primary: 500;
+  --color-bl-900: #00672E;
+  --color-bg-900: #EFECEA;
 }
 
 @layer base{
