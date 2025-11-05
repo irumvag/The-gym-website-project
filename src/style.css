@@ -18,6 +18,9 @@
   --spacing-270: 270px;
   --spacing-20: 20px;
   --spacing-23: 23px;
+  --spacing-93 : 93px;
+  --spacing-155: 155px;
+  --spacing-206: 206px;
   --spacing-5000: 5000px;
   --spacing-440: 440px;
   --spacing-288: 288px;
@@ -90,7 +93,7 @@
         @apply mt-[107px] ml-[9.5%] mr-[13.4%]  sm:ml-[16.06%] sm:mr-[9.65%] sm:mt-[166px] sm:text-[21px] leading-[22px] md:leading-[25px] lg:mt-[35.50%] lg:ml-[14%] lg:mr-[9%] lg:text-lg 1xl:leading-[25px] 2xl:text-[21px] lg:leading-[22px] font-light
     }
     .main-header{
-        @apply mx-[19px] md:ml-[58px] md:mr-[60px] lg:mx-[205px] pt-[93px]  md:pt-[155px] lg:pt-[206px] text-[#00672E];
+        @apply mx-[19px] md:ml-[58px] md:mr-[60px] lg:mx-[205px] pt-[155px]  md:pt-[155px] lg:pt-[206px] text-[#00672E];
     }
     .mark-sm{
         @apply marker:text-sm;
