@@ -1,13 +1,12 @@
-
-<div class="grid justify-center max-w-425 sm:max-w-834 lg:max-w-8xl mx-auto bg-[#EFECEA]">
-  <p id="about" class="text-2xl main-description font-normal tracking-normal">
+<div class="grid justify-center mx-auto bg-[#EFECEA]">
+  <p id="about" class="text-2xl main-description max-w-425 sm:max-w-834 lg:max-w-8xl font-normal tracking-normal">
     We are a Berlin-based communications agency specialising in helping companies and brands find their voice and position themselves. Whether it's brand building, identity sharpening, or communication strategy, we bring a fresh perspective to established structures, develop tailor-made communication solutions, and ensure that messages resonate. With over a decade of experience, we have honed our skills in giving brands their unmistakable identity and making them visible in the long term.
   </p>
-  <div class="z-30 sticky top-0 flex items-center justify-center lg:mt-85 w-fit mx-auto">
+  <div class="z-30 sticky top-0 flex items-center justify-center lg:mt-85 w-fit mx-auto max-w-425 sm:max-w-834 lg:max-w-8xl">
     <img class="main-content-yellow-hexagone" src="/main-content-yellow-hexagone.png" alt="main-content-yellow-hexagone">
   </div>
   
-  <div id="services" class="main-content-grid grid items-center lg:grid-cols-2">
+  <div id="services" class="main-content-grid grid items-center lg:grid-cols-2 max-w-425 sm:max-w-834 lg:max-w-8xl">
     <ul id="main-content-list" class="flex flex-col justify-between text-xl gap-10 mr-69 md:mr-0 sm:text-2xl md:text-4xl lg:text-4xl 1xl:text-5xl lg:tracking-wider 1xl:tracking-normal lg:w-90 lg:self-stretch font-medium">
       <li>Brand strategy</li>
       <li>Corporate Identity & Website development</li>
@@ -24,4 +23,23 @@
     </div>
   </div>
 
+  <div class="md:hidden lg:block">
+    <div id="yellowContent"></div>
+    <div id="footer"></div>
+  </div>
 </div>
+
+<script>
+  function loadNestedComponent(id, url) {
+    fetch(url)
+      .then(res => res.text())
+      .then(html => {
+        const container = document.getElementById(id);
+        if (container) container.innerHTML = html;
+      })
+      .catch(err => console.error(`Error loading ${url}:`, err));
+  }
+
+  loadNestedComponent('yellowContent', 'src/sections/yellowContent.html');
+  loadNestedComponent('footer', 'src/sections/footer.html');
+</script>
