@@ -29,17 +29,8 @@
   </div>
 </div>
 
+<script src="src/main.js"></script>
 <script>
-  function loadNestedComponent(id, url) {
-    fetch(url)
-      .then(res => res.text())
-      .then(html => {
-        const container = document.getElementById(id);
-        if (container) container.innerHTML = html;
-      })
-      .catch(err => console.error(`Error loading ${url}:`, err));
-  }
-
-  loadNestedComponent('yellowContent', 'src/sections/yellowContent.html');
-  loadNestedComponent('footer', 'src/sections/footer.html');
+  loadComponent('yellowContent', 'src/sections/yellowContent.html');
+  loadComponent('footer', 'src/sections/footer.html');
 </script>
