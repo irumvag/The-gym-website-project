@@ -15,7 +15,14 @@
                 if (id === 'header') {
                 initializeMenu();
             }
+            if (id == 'footer'){
+                removeimage();
+            }
             });
+        }
+        const removeimage=()=>{
+        let ft=document.getElementById("footer-img");
+        ft.classList.add('hidden','md:block');
         }
 
         const initializeMenu = () => {
