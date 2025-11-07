@@ -15,7 +15,27 @@
                 if (id === 'header') {
                 initializeMenu();
             }
+            if (id == 'footer'){
+                removeimage();
+            }
             });
+        }
+        const removeimage=()=>{
+        let ft=document.getElementById("footer-img-div");
+        ft.classList.toggle('hidden');
+        ft.classList.toggle('md:block');
+        let ftdiv=document.getElementById("ft-div");
+        ftdiv.classList.toggle('h-4/6');
+        ftdiv.classList.toggle('md:h-4/6');
+        ftdiv.classList.toggle('mt-[152px]');
+        ftdiv.classList.toggle('h-1')
+        let ftht=document.getElementById('ftht');
+        ft.classList.toggle('h-4/6');
+        ft.classList.toggle('h-auto');
+        let footers=document.getElementById('footer-f');
+        footers.classList.toggle('h-screen');
+        footers.classList.toggle('md:h-screen');
+        footers.classList.toggle('mb-20');
         }
 
         const initializeMenu = () => {
