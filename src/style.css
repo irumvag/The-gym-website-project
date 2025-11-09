@@ -99,7 +99,7 @@
         @apply text-white leading-7 lg:leading-13 text-center font-medium z-40 text-[24px] lg:text-[48px];
     }
     .hero-container{
-        @apply relative lg:pt-48 md:pt-40 pt-96 w-full bg-[#EFECEA] overflow-clip;
+        @apply relative lg:pt-48 md:pt-40 pt-74 w-full bg-[#EFECEA] overflow-clip;
     }
     .hero-text-container{
         @apply w-full lg:mt-[19.88%] mt-[34%] flex md:hidden lg:flex absolute justify-center items-center;
