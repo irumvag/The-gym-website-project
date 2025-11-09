@@ -4,14 +4,16 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^7.1.7"
+    "vite": "^7.1.7",
+    "vite-plugin-static-copy": "^3.1.4"
   },
   "dependencies": {
+    "@fontsource-variable/outfit": "^5.2.8",
     "@tailwindcss/vite": "^4.1.14",
     "tailwindcss": "^4.1.14"
   }
