@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baumeister Data Privacy</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script>
+        let loadComponents=(id,url)=>{
+            fetch(url)
+            .then((response)=>response.text())
+            .then((html)=>{
+                document.getElementById(id).innerHTML=html;
+                if (id === 'header') {
+                initializeMenu();
+            }
+            if (id == 'footer'){
+                removeimage();
+            }
+            });
+        }
+        const removeimage=()=>{
+        let ft=document.getElementById("footer-img-div");
+        ft.classList.toggle('hidden');
+        ft.classList.toggle('md:block');
+        let ftdiv=document.getElementById("ft-div");
+        ftdiv.classList.toggle('h-4/6');
+        ftdiv.classList.toggle('md:h-4/6');
+        ftdiv.classList.toggle('mt-[152px]');
+        ftdiv.classList.toggle('h-1')
+        let ftht=document.getElementById('ftht');
+        ft.classList.toggle('h-4/6');
+        ft.classList.toggle('h-auto');
+        let footers=document.getElementById('footer-f');
+        footers.classList.toggle('h-screen');
+        footers.classList.toggle('md:h-screen');
+        footers.classList.toggle('mb-20');
+        }
+
+        const initializeMenu = () => {
+        const menuIcon = document.getElementById("menuIcon");
+        const closeIcon = document.getElementById("closeIcon");
+        const mobileMenu = document.getElementById("mobileMenu");
+
+        if (menuIcon && closeIcon && mobileMenu) {
+            menuIcon.addEventListener("click", () => {
+                mobileMenu.classList.remove("hidden");
+                mobileMenu.classList.add("flex");
+                closeIcon.classList.remove("hidden");
+                menuIcon.classList.add("hidden");
+            });
+
+            closeIcon.addEventListener("click", () => {
+                mobileMenu.classList.add("hidden");
+                mobileMenu.classList.remove("flex");
+                closeIcon.classList.add("hidden");
+                menuIcon.classList.remove("hidden");
+            });
+        }
+    }
+
+        window.onload=()=> {
+            loadComponents('header', 'src/sections/header.html');
+            loadComponents('privacy','src/sections/data-privacy.html');
+            loadComponents('footer', 'src/sections/footer.html');
+        }
+    </script>
+</head>
+<body class="bg-bg-900">
+    <div id="header" class="text-bl-900"></div>
+    <div id="privacy"></div>
+    <div id="footer" class="text-bl-900"></div>
+</body>
+</html>

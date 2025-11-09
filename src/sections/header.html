@@ -1,4 +1,48 @@
-<div>
-    <h1 class="text-blue-800">Header</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quibusdam.</p>
-</div>
+<header
+  class="fixed inset-x-0 top-0 flex justify-between px-5 md:px-5 mt-12 md:mt-3 z-50"
+>
+  <div class="flex flex-col w-8 h-8 text-12">
+    <p class="font-normal text-10 md:text-2xl">DE</p>
+    <p class="text-10 md:text-2xl">EN</p>
+  </div>
+
+  <div class="relative flex justify-center">
+    <img src="/bau.png" class="md:hidden"/>
+      <p class="absolute md:block text-3xl md:text-5xl font-semibold"><a href="index.html">Baumeister</a></p>
+  </div>
+
+  <nav class="xl:hidden flex items-center">
+    <img
+      id="menuIcon"
+      src="/header.png"
+      alt="menu"
+      class="w-10 h-6 md:w-16 md:h-9 cursor-pointer"
+    />
+    <img
+      id="closeIcon"
+      src="/cross.png"
+      alt="close"
+      class="w-10 h-7 md:w-16 md:h-11 mb-2 cursor-pointer hidden"
+    />
+
+    <ul
+      id="mobileMenu"
+      class="absolute xl:hidden mt-16 right-0 hidden flex-col items-center space-y-16 text-3xl md:text-5xl text-[#00672E]"
+      style="left: 50%; transform: translateX(calc(-50vw + 50%)); top: 100%"
+    >
+      <a href="#about"><li class="font-semibold">About</li></a>
+      <a href="#services"><li class="font-semibold">Services</li></a>
+      <a href="#yellowContent"><li class="font-semibold">References</li></a>
+      <a href="contacts-page.html"><li class="font-semibold">Contact</li></a>
+      <a href="dataprivacy.html"><li class="font-semibold">Data privacy</li></a>
+    </ul>
+  </nav>
+
+  <ul class="hidden xl:flex xl:flex-col -space-y-2 text-10">
+    <a href="#about"><li class="text-right text-2xl">About</li></a>
+    <a href="#services"><li class="text-right text-2xl">Services</li></a>
+    <a href="#yellowContent"><li class="text-right text-2xl">References</li></a>
+    <a href="contacts-page.html"><li class="text-right text-2xl">Contact</li></a>
+    <a href="dataprivacy.html"><li class="text-right text-2xl">Data privacy</li></a>
+  </ul>
+</header>
